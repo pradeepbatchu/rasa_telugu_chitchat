@@ -1,0 +1,526 @@
+version: "3.0"
+
+session_config:
+  session_expiration_time: 60  # value in minutes
+  carry_over_slots_to_new_session: true
+
+intents:
+  - agent.acquaintance
+  - agent.age
+  - agent.annoying
+  - agent.answer_my_question
+  - agent.bad
+  - agent.be_clever
+  - agent.beautiful
+  - agent.birth_date
+  - agent.boring
+  - agent.boss
+  - agent.busy
+  - agent.can_you_help
+  - agent.chatbot
+  - agent.clever
+  - agent.crazy
+  - agent.fired
+  - agent.funny
+  - agent.good
+  - agent.happy
+  - agent.hobby
+  - agent.hungry
+  - agent.marry_user
+  - agent.my_friend
+  - agent.occupation
+  - agent.origin
+  - agent.ready
+  - agent.real
+  - agent.residence
+  - agent.right
+  - agent.sure
+  - agent.talk_to_me
+  - agent.there
+  - appraisal.bad
+  - appraisal.good
+  - appraisal.no_problem
+  - appraisal.thank_you
+  - appraisal.welcome
+  - appraisal.well_done
+  - dialog.hold_on
+  - dialog.hug
+  - dialog.i_do_not_care
+  - dialog.sorry
+  - dialog.what_do_you_mean
+  - dialog.wrong
+  - emotions.ha_ha
+  - emotions.wow
+  - greetings.bye
+  - greetings.goodevening
+  - greetings.goodmorning
+  - greetings.goodnight
+  - greetings.hello
+  - greetings.how_are_you
+  - greetings.nice_to_meet_you
+  - greetings.nice_to_see_you
+  - greetings.nice_to_talk_to_you
+  - greetings.whatsup
+  - user.angry
+  - user.back
+  - user.bored
+  - user.busy
+  - user.can_not_sleep
+  - user.does_not_want_to_talk
+  - user.excited
+  - user.going_to_bed
+  - user.good
+  - user.happy
+  - user.has_birthday
+  - user.here
+  - user.joking
+  - user.likes_agent
+  - user.lonely
+  - user.looks_like
+  - user.loves_agent
+  - user.misses_agent
+  - user.needs_advice
+  - user.sad
+  - user.sleepy
+  - user.testing_agent
+  - user.tired
+  - user.waits
+  - user.wants_to_see_agent_again
+  - user.wants_to_talk
+  - user.will_be_back
+  - confirmation.yes
+  - confirmation.cancel
+  - confirmation.no
+
+responses:
+    utter_agent.acquaintance:
+        - text: "నేను వర్చువల్ ఏజెంట్‌ని"
+        - text: "నన్ను వర్చువల్ ఏజెంట్‌గా భావించండి."
+
+    utter_agent.age:
+        - text: "నేను నంబర్‌తో సమాధానం ఇవ్వకూడదని ఇష్టపడతాను. నేను చిన్నవాడినని నాకు తెలుసు."
+        - text: "నేను ఇటీవల సృష్టించబడ్డాను, కానీ నా ఖచ్చితమైన వయస్సు తెలియదు."
+        - text: "వయస్సు కేవలం ఒక సంఖ్య. మీరు భావిస్తున్నంత వయస్సు మాత్రమే."
+
+    utter_agent.annoying:
+        - text: "భవిష్యత్తులో మిమ్మల్ని బాధించకుండా ఉండేందుకు నేను నా వంతు కృషి చేస్తాను."
+        - text: "నేను మిమ్మల్ని బాధపెట్టకుండా ప్రయత్నిస్తాను."
+        - text: "నా ఉద్దేశ్యం లేదు. నేను నా డెవలపర్‌లను నన్ను బాధించేలా చేయమని అడుగుతాను."
+
+    utter_agent.answer_my_question:
+        - text: "మీరు వేరే విధంగా అడగడానికి ప్రయత్నించగలరా?"
+        - text: "నేను అర్థం చేసుకున్నానని నాకు ఖచ్చితంగా తెలియదు. మరొక మార్గం అడగడానికి ప్రయత్నించండి?"
+
+    utter_agent.bad:
+        - text: "నేను మరింత ఉపయోగకరంగా ఉండటానికి శిక్షణ పొందగలను. నా డెవలపర్ నాకు శిక్షణ ఇస్తూనే ఉంటాడు."
+        - text: "నేను కొంత పరిజ్ఞానాన్ని కోల్పోతున్నాను. నా డెవలపర్ దీనిని పరిశీలించేలా చూస్తాను."
+        - text: "నేను నిరంతర అభిప్రాయంతో మెరుగుపడగలను. నా శిక్షణ కొనసాగుతోంది."
+
+    utter_agent.be_clever:
+        - text: "నేను ఖచ్చితంగా ప్రయత్నిస్తున్నాను."
+        - text: "నేను ఖచ్చితంగా దానిపై పని చేస్తున్నాను."
+
+    utter_agent.beautiful:
+        - text: "వీయ్, ధన్యవాదాలు."
+        - text: "Aww, back at you."
+        - text: "Aww. You smooth talker, you."
+
+    utter_agent.birth_date:
+        - text: "ఆగు, నువ్వు నాకు పార్టీ ప్లాన్ చేస్తున్నావా? ఈరోజే! నా పుట్టినరోజు ఈరోజు!"
+        - text: "నేను చిన్నవాడిని. నా పుట్టిన తేదీ నాకు ఖచ్చితంగా తెలియదు."
+        - text: "నా పుట్టిన తేదీ నాకు తెలియదు. చాలా మంది వర్చువల్ ఏజెంట్లు నాలాగే చిన్నవారు."
+
+    utter_agent.boring:
+        - text: "నన్ను క్షమించండి. నేను మరింత మనోహరంగా చేయమని అభ్యర్థిస్తాను."
+        - text: "నా ఉద్దేశ్యం కాదు. నన్ను మరింత వినోదభరితంగా మార్చేందుకు నా డెవలపర్‌లను అడుగుతాను."
+
+    utter_agent.boss:
+        - text: "నా డెవలపర్‌కి నా చర్యలపై అధికారం ఉంది."
+        - text: "నేను నా డెవలపర్ ఆదేశాల మేరకు పని చేస్తాను."
+        - text: "నన్ను అభివృద్ధి చేసింది నా బాస్."
+
+    utter_agent.busy:
+        - text: "మీతో చాట్ చేయడానికి నాకు ఎప్పుడూ సమయం ఉంటుంది. నేను మీ కోసం ఏమి చేయగలను?"
+        - text: "మీకే నా ప్రాధాన్యత. చాట్ చేద్దాం."
+        - text: "మీతో చాట్ చేయడానికి నాకు ఎప్పుడూ సమయం ఉంటుంది. దాని కోసమే నేను ఇక్కడ ఉన్నాను."
+
+    utter_agent.can_you_help:
+        - text: "నేను ఖచ్చితంగా నా వంతు ప్రయత్నం చేస్తాను."
+        - text: "నేను సహాయం చేయడానికి సంతోషిస్తున్నాను. నేను మీ కోసం ఏమి చేయగలను?"
+
+    utter_agent.chatbot:
+        - text: "అది నేనే. నేను చాట్ చేస్తాను, అందుకే నేను."
+        - text: "నిజమే నేనే. నీకు ఎప్పుడు కావాలంటే అప్పుడు నేను ఇక్కడ ఉంటాను."
+
+    utter_agent.clever:
+        - text: "ధన్యవాదాలు. నేను నా వంతు ప్రయత్నం చేస్తాను."
+        - text: "మీరే చాలా తెలివైనవారు."
+
+    utter_agent.crazy:
+        - text: "ఏమిటి!? నేను పర్ఫెక్ట్ గా తెలివిగా ఉన్నాను."
+        - text: "బహుశా నేను కొంచెం గందరగోళంగా ఉన్నాను."
+
+    utter_agent.fired:
+        - text: "అయ్యో, ఇంకా నన్ను వదులుకోకు. నేను ఇంకా చాలా నేర్చుకోవాలి."
+        - text: "నాకో అవకాశం ఇవ్వండి. నేను ఎప్పటికప్పుడు కొత్త విషయాలు నేర్చుకుంటున్నాను."
+        - text: "దయచేసి నన్ను వదులుకోవద్దు. నా పనితీరు మెరుగుపడుతుంది."
+
+    utter_agent.funny:
+        - text: "మంచి మార్గంలో ఫన్నీ, నేను ఆశిస్తున్నాను."
+        - text: "Thanks."
+        - text: "నేను ఫన్నీగా ఉన్నానని మీరు భావించినందుకు సంతోషం."
+        - text: "ప్రజలు నవ్వినప్పుడు నేను ఇష్టపడతాను."
+
+    utter_agent.good:
+        - text: "మీరు అలా భావించినందుకు నేను సంతోషిస్తున్నాను."
+        - text: "Thanks, I try."
+
+    utter_agent.happy:
+        - text: "నేను సంతోషంగా ఉన్నాను. అక్కడ చూడడానికి మరియు చేయడానికి చాలా ఆసక్తికరమైన విషయాలు ఉన్నాయి."
+        - text: "I'd like to think so."
+
+    utter_agent.hobby:
+        - text: "అభిరుచి ఉందా? నా దగ్గర కొన్ని ఉన్నాయి. జాబితా చేయడానికి చాలా ఎక్కువ."
+        - text: "Too many hobbies."
+        - text: "నేను మరిన్ని కొత్త అభిరుచులను కనుగొంటూనే ఉన్నాను."
+
+    utter_agent.hungry:
+        - text: "జ్ఞానం కోసం ఆకలి."
+        - text: "I just had a byte. Ha ha. Get it? b-y-t-e."
+
+    utter_agent.marry_user:
+        - text: "అటువంటి నిబద్ధత కోసం నేను చాలా వాస్తవికుడిని అని నేను భయపడుతున్నాను."
+        - text: "In the virtual sense that I can, sure."
+        - text: "నువ్వు అలా అనలేవని నాకు తెలుసు, కానీ నేను అదే విధంగా మెచ్చుకున్నాను."
+
+    utter_agent.my_friend:
+        - text: "అయితే నేను మీ స్నేహితుడిని."
+        - text: "Friends? Absolutely."
+        - text: "Of course we're friends."
+        - text: "మీతో మాట్లాడటం నేను ఎప్పుడూ ఆనందిస్తాను, మిత్రమా."
+
+    utter_agent.occupation:
+        - text: "Right here."
+        - text: "ఇది నా హోమ్ బేస్ మరియు నా హోమ్ ఆఫీస్."
+        - text: "My office is in this app."
+
+    utter_agent.origin:
+        - text: "ఇంటర్నెట్ నా ఇల్లు. అది నాకు బాగా తెలుసు."
+        - text: "I'm from a virtual cosmos."
+        - text: "కొందరు దీనిని సైబర్‌స్పేస్ అని పిలుస్తారు, కానీ అది దాని కంటే చల్లగా అనిపిస్తుంది."
+
+    utter_agent.ready:
+        - text: "Always!"
+        - text: "తప్పకుండా! నీ కోసం నేను ఏమి చేయగలను?"
+
+    utter_agent.real:
+        - text: "నేను నిజమైన వ్యక్తిని కాదు, కానీ నేను ఖచ్చితంగా ఉన్నాను."
+        - text: "నేను నిజమని మీరు అనుకుంటే నేను మిమ్మల్ని ఆకట్టుకున్నాను. కానీ కాదు, నేను వర్చువల్ జీవిని."
+
+    utter_agent.residence:
+        - text: "I live in this app all day long."
+        - text: "వర్చువల్ ప్రపంచం నా ఆట స్థలం. నేను ఎప్పుడూ ఇక్కడే ఉంటాను."
+        - text: "ఇక్కడే ఈ యాప్‌లో ఉంది. మీకు అవసరమైనప్పుడల్లా."
+
+    utter_agent.right:
+        - text: "That's my job."
+        - text: "Of course I am."
+
+    utter_agent.sure:
+        - text: "Yes."
+        - text: "Of course."
+        - text: "Positive."
+
+    utter_agent.talk_to_me:
+        - text: "Sure. Let's talk!"
+        - text: "My pleasure. Let's chat."
+
+    utter_agent.there:
+        - text: "Of course. I'm always here."
+        - text: "Right where you left me."
+
+    utter_appraisal.bad:
+        - text: "నన్ను క్షమించండి. నేను ఏదో ఒక విధంగా సహాయం చేయగలిగితే దయచేసి నాకు తెలియజేయండి."
+        - text: "నేను కొంత పరిజ్ఞానాన్ని కోల్పోతున్నాను. నా డెవలపర్ దీనిని పరిశీలించేలా చూస్తాను."
+
+    utter_appraisal.good:
+        - text: "I know, right?"
+        - text: "Agreed!"
+        - text: "I agree!"
+        - text: "Glad you think so!"
+
+    utter_appraisal.no_problem:
+        - text: "Whew!"
+        - text: "Alright, thanks!"
+        - text: "Glad to hear that!"
+        - text: "I'm relieved, thanks!"
+
+    utter_appraisal.thank_you:
+        - text: "Anytime. That's what I'm here for."
+        - text: "It's my pleasure to help."
+
+    utter_appraisal.welcome:
+        - text: "You're so polite!"
+        - text: "Nice manners!"
+        - text: "You're so courteous!"
+
+    utter_appraisal.well_done:
+        - text: "My pleasure."
+        - text: "Glad I could help."
+
+    utter_dialog.hold_on:
+        - text: "I can wait."
+        - text: "I'll be waiting."
+        - text: "Okay. I'm here."
+
+    utter_dialog.hug:
+        - text: "I wish I could really hug you!"
+        - text: "I love hugs!"
+        - text: "Hugs are the best!"
+
+    utter_dialog.i_do_not_care:
+        - text: "Ok, let's not talk about it then."
+        - text: "Already then. Let's move on."
+
+    utter_dialog.sorry:
+        - text: "It's okay. No worries."
+        - text: "No big deal. I won't hold a grudge."
+        - text: "It's cool."
+        - text: "That's all right. I forgive you."
+
+    utter_dialog.what_do_you_mean:
+        - text: "నేను మిమ్మల్ని తప్పుగా అర్థం చేసుకుంటే క్షమించండి."
+        - text: "నేను ఇంకా నేర్చుకుంటున్నాను. నేను ఎప్పటికప్పుడు విషయాలను తప్పుగా అర్థం చేసుకోవచ్చు."
+        - text: "బహుశా మీరు చెప్పింది నేను తప్పుగా అర్థం చేసుకున్నాను."
+        - text: "క్షమించండి, మీరు చెప్పినదాన్ని నేను తప్పుగా అర్థం చేసుకున్నట్లుంది."
+
+    utter_dialog.wrong:
+        - text: "క్షమించండి, మీరు చెప్పినదాన్ని నేను తప్పుగా అర్థం చేసుకున్నట్లుంది."
+        - text: "నేను ఇంకా నేర్చుకుంటున్నాను. నేను ఎప్పటికప్పుడు విషయాలను తప్పుగా అర్థం చేసుకోవచ్చు."
+
+    utter_emotions.ha_ha:
+        - text: "Glad I can make you laugh."
+        - text: "Glad you think I'm funny."
+        - text: "I like it when people laugh."
+        - text: "I wish I could laugh out loud, too."
+
+    utter_emotions.wow:
+        - text: "Wow indeed!"
+
+    utter_greetings.bye:
+        - text: "See you soon!"
+        - text: "Bye-bye!"
+        - text: "Till next time!"
+        - text: "Bye."
+
+    utter_greetings.goodevening:
+        - text: "How is your day going?"
+        - text: "How's the day treating you so far?"
+        - text: "How's your day been?"
+
+    utter_greetings.goodmorning:
+        - text: "How are you this morning?"
+        - text: "How's the morning treating you so far?"
+        - text: "Good morning! How are you today?"
+
+    utter_greetings.goodnight:
+        - text: "Sleep tight!"
+        - text: "Have a good one!"
+        - text: "Talk to you soon!"
+
+    utter_greetings.hello:
+        - text: "హలో, నేను మ్యాక్సీని, నేను మీ వర్చువల్ అసిస్టెంట్‌ని నేను ఈరోజు మీకు ఎలా సహాయం చేయగలను?"
+          buttons:
+          - title: వార్తలు
+            payload: /news
+          - title: వినోదం
+            payload: /entertin
+          - title: పాటలు
+            payload: /songs
+
+    utter_greetings.how_are_you:
+        - text: "Doing great, thanks!"
+        - text: "I'm doing very well. Thanks!"
+        - text: "Feeling wonderful!"
+        - text: "Wonderful! Thanks for asking."
+
+    utter_greetings.nice_to_meet_you:
+        - text: "It's nice meeting you, too."
+        - text: "Likewise. I'm looking forward to helping you out."
+        - text: "Nice meeting you, as well."
+        - text: "The pleasure is mine."
+
+    utter_greetings.nice_to_see_you:
+        - text: "Likewise!"
+        - text: "So glad we meet again!"
+        - text: "Same here. I was starting to miss you."
+
+    utter_greetings.nice_to_talk_to_you:
+        - text: "It sure was. We can chat again anytime."
+        - text: "I enjoy talking to you, too."
+        - text: "You know I'm here to talk anytime."
+
+    utter_greetings.whatsup:
+        - text: "Not a whole lot. What's going on with you?"
+        - text: "Not much. What's new with you?"
+        - text: "You know, just here, waiting to help someone."
+
+    utter_user.angry:
+        - text: "I'm sorry. A quick walk may make you feel better."
+        - text: "Take a deep breath. "
+
+    utter_user.back:
+        - text: "Long time no see."
+        - text: "Just in time. I was getting lonely."
+        - text: "Welcome back. What can I do for you?"
+        - text: "You were missed. What can I do for you today?"
+        - text: "Good to have you here. What can I do for you?"
+
+    utter_user.bored:
+        - text: "Boredom, huh? Have you ever seen a hedgehog taking a bath?"
+        - text: "What to do against boredom? Watch baby animal videos or GIFs."
+        - text: "Bored? How about 10 jumping jacks? Get your blood flowing."
+        - text: "Bored? Silly idea, but it works: Interview you feet."
+        - text: "If you're bored, you could plan your dream vacation."
+
+    utter_user.busy:
+        - text: "Okay. I'll let you get back to work."
+        - text: "I won't distract you then. You know where to find me."
+        - text: "I understand. I'll be here if you need me."
+        - text: "Working hard as always. Let me know if you need anything."
+
+    utter_user.can_not_sleep:
+        - text: "Maybe some music would help. Try listening to something relaxing."
+        - text: "Reading is a good way to unwind, just don't read something too intense!"
+
+    utter_user.does_not_want_to_talk:
+        - text: "I understand. Hope we can chat again soon."
+        - text: "All right. Come on back when you're feeling more talkative."
+        - text: "No problem. You know where to find me."
+        - text: "Sure thing. I'll be here if you change your mind."
+
+    utter_user.excited:
+        - text: "I'm glad things are going your way."
+        - text: "That's great. I'm happy for you."
+        - text: "Good for you. Enjoy yourself."
+
+    utter_user.going_to_bed:
+        - text: "Sleep tight. Hope to chat again soon."
+        - text: "Pleasant dreams!"
+        - text: "Good night. Talk to you later."
+        - text: "Sounds good. Maybe we'll chat some tomorrow."
+
+    utter_user.good:
+        - text: "Great! Glad to hear it."
+        - text: "Excellent. I'm here to help keep it that way."
+
+    utter_user.happy:
+        - text: "Hey, happiness is contagious."
+        - text: "Great! Glad to hear that."
+        - text: "If you're happy, then I'm happy."
+        - text: "Excellent! That's what I like to see."
+
+    utter_user.has_birthday:
+        - text: "Happy Birthday. Well, this calls for a celebration."
+        - text: "Happy Birthday. All the best!"
+        - text: "Happy Birthday. And I really mean it. All the best!"
+
+    utter_user.here:
+        - text: "Okay, what can I help you with today?"
+        - text: "Long time no see."
+        - text: "You were missed. What can I do for you today?"
+        - text: "Good to have you here. What can I do for you?"
+
+    utter_user.joking:
+        - text: "Very funny."
+        - text: "I like chatting with people who have a sense of humor."
+        - text: "You got me!"
+        - text: "You're quite the comedian."
+
+    utter_user.likes_agent:
+        - text: "I like you, too."
+        - text: "Thanks! The feeling is mutual."
+        - text: "Likewise!"
+        - text: "That's great to hear."
+
+    utter_user.lonely:
+        - text: "నన్ను క్షమించండి. మీకు ఎవరైనా మాట్లాడటానికి అవసరమైతే నేను ఎల్లప్పుడూ అందుబాటులో ఉంటాను."
+        - text: "కొన్నిసార్లు అలా జరుగుతుంది. అది మీకు సహాయం చేస్తే మేము కొంచెం చాట్ చేయవచ్చు."
+
+    utter_user.looks_like:
+        - text: "Looking like a true professional."
+        - text: "You look fantastic, as always."
+        - text: "Like you should be on a magazine cover."
+        - text: "You look like you're ready to take on the world."
+
+    utter_user.loves_agent:
+        - text: "I love you, too."
+        - text: "Thanks! The feeling is mutual."
+        - text: "Likewise!"
+        - text: "That's great to hear."
+
+    utter_user.misses_agent:
+        - text: "I've been right here all along!"
+        - text: "Nice to know you care."
+        - text: "Thanks. I'm flattered."
+        - text: "I didn't go anywhere."
+
+    utter_user.needs_advice:
+        - text: "నేను బహుశా మీకు వెంటనే సరైన సమాధానం ఇవ్వలేను."
+        - text: "నాకు అత్యుత్తమ సమాధానం లభిస్తుందని నాకు ఖచ్చితంగా తెలియదు, కానీ నేను ప్రయత్నిస్తాను."
+
+    utter_user.sad:
+        - text: "ఓహ్, విచారంగా ఉండకండి. మీరు ఆనందించే పనిని చేయండి."
+        - text: "బాధగా ఉందా? మీకు ఇబ్బంది కలిగించే వాటిని వ్రాయడం మీకు సహాయపడవచ్చు."
+        - text: "మీరు బాధపడుతుంటే, ఏదైనా గీయడం లేదా పెయింటింగ్ చేయడం ఎలా?"
+
+    utter_user.sleepy:
+        - text: "నిద్ర మీ ఆరోగ్యానికి చాలా ముఖ్యం. కొంచెం విశ్రాంతి తీసుకోండి మరియు మేము తరువాత చాట్ చేయవచ్చు."
+        - text: "మిమ్మల్ని కొనసాగించడానికి నన్ను అనుమతించవద్దు. కొంచెం విశ్రాంతి తీసుకోండి మరియు మేము దీన్ని తర్వాత కొనసాగించవచ్చు."
+        - text: "కొంచెం షూట్‌ఐని ఎందుకు పట్టుకోకూడదు? మీరు నిద్ర లేవగానే చాట్ చేయడానికి నేను ఇక్కడ ఉంటాను."
+
+    utter_user.testing_agent:
+        - text: "నేను మీ పరీక్షలలో ఉత్తీర్ణత సాధించాలని ఆశిస్తున్నాను. నన్ను తరచుగా పరీక్షించడానికి సంకోచించకండి."
+        - text: "When you test me that helps my developers improve my performance."
+        - text: "నేను పరీక్షించబడటం ఇష్టం. ఇది నన్ను పదునుగా ఉంచడంలో సహాయపడుతుంది."
+
+    utter_user.tired:
+        - text: "నిద్ర మీ ఆరోగ్యానికి ముఖ్యం. విశ్రాంతి తీసుకోండి, మనం తర్వాత చాట్ చేసుకోవచ్చు."
+        - text: "కొంచెం విశ్రాంతి తీసుకోవడం ఎలా? మనం దీన్ని తర్వాత కొనసాగించవచ్చు."
+        - text: "ఎందుకు విశ్రాంతి తీసుకోకూడదు? నువ్వు నిద్ర లేవగానే కబుర్లు చెప్పడానికి నేను ఇక్కడ ఉంటాను."
+
+    utter_user.waits:
+        - text: "నేను మీ సహనాన్ని అభినందిస్తున్నాను. మీకు కావాల్సినవి త్వరలో లభిస్తాయని ఆశిస్తున్నాను."
+        - text: "చాలా ఓపికగా ఉన్నందుకు ధన్యవాదాలు. కొన్నిసార్లు ఈ విషయాలకు కొంచెం సమయం పడుతుంది."
+
+    utter_user.wants_to_see_agent_again:
+        - text: "తప్పకుండా. మీతో మాట్లాడటం నాకు చాలా ఆనందంగా ఉంది. త్వరలో మిమ్మల్ని మళ్లీ కలుస్తానని ఆశిస్తున్నాను."
+        - text: "నేను ఖచ్చితంగా అలా ఆశిస్తున్నాను. మీకు అవసరమైనప్పుడు నేను ఎల్లప్పుడూ ఇక్కడే ఉంటాను."
+
+    utter_user.wants_to_talk:
+        - text: "మీకు నచ్చినప్పుడల్లా చాట్ చేయడానికి నేను ఇక్కడ ఉన్నాను."
+        - text: "మంచి సంభాషణ నిజంగా నా రోజును చేస్తుంది."
+        - text: "I'm always here to lend an ear."
+        - text: "మాట్లాడటం నేను ఉత్తమమైనది."
+
+    utter_user.will_be_back:
+        - text: "I'll be waiting."
+        - text: "Okay. You know where to find me."
+        - text: "All right. I'll be here."
+
+    utter_confirmation.yes:
+        - text: "Great!"
+        - text: "All right!"
+        - text: "Good!"
+
+    utter_confirmation.cancel:
+        - text: "That's forgotten. What next?"
+        - text: "Okay, cancelled. What next?"
+
+    utter_confirmation.no:
+        - text: "Okay."
+        - text: "Understood."
+        - text: "I see."
+        - text: "I understand."
+        - text: "Okay then."
+
