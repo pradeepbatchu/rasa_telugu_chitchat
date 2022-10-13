@@ -28,3 +28,5 @@ expose model as api
 ```bash
 rasa run --enable-api --endpoints endpoints.yml --cors * --debug --credentials credentials.yml --log-file logs.json
 ```
+Integrate with Rasa webchat and run the UI, we can see the response in UI
+![Screenshot](https://github.com/pradeepbatchu/rasa_telugu_chitchat/blob/main/rasachatwidget.png)
